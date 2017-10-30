@@ -1,8 +1,1 @@
-[
-  {
-    "id": 1,
-    "title": "Awesome first post!",
-    "content": "Welcome to my blog! This is my first post! Isn't it amazeballs???",
-    "date": "10-30-17"
-  }
-]
+[{"id":"3da0e9c3-4bbb-41a1-8b9c-8015b3e8487a","title":"Second post","content":"This blog is amazing! (Don't you think?)","date":"2017-10-30T21:24:30.470Z"},{"id":"b3e188bb-9b06-4acb-ba8b-2fbbfc017d64","title":"Awesome first post!","content":"Welcome to my blog! This is my first post! Isn't it amazeballs???","date":"2017-10-30T21:27:00.935Z"}]
