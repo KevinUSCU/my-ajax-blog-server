@@ -1,0 +1,29 @@
+{
+  "name": "ajax-blog-server",
+  "version": "0.0.1",
+  "description": "A basic blog server with the ability to view, create, edit and delete posts.",
+  "main": "app.js",
+  "scripts": {
+    "test": "none",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Kevin Springer",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
