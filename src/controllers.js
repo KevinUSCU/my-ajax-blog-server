@@ -2,7 +2,7 @@ const model = require('./model')
 
 function getIndex(req, res, next) {
   const result = model.getIndex()
-  res.status(200).json({ result })
+  res.status(200).json(result)
 }
 
 function getPost(req, res, next) {
@@ -11,7 +11,7 @@ function getPost(req, res, next) {
 
   if (result.error) return next({ status: 404, error: result.error })
 
-  res.status(200).json({ result })
+  res.status(200).json(result)
 }
 
 function createPost(req, res, next) {
@@ -20,7 +20,7 @@ function createPost(req, res, next) {
 
   if (result.error) return next({ status: 400, error: result.error })
 
-  res.status(201).json({ result })
+  res.status(201).json(result)
 }
 
 function updatePost(req, res, next) {
@@ -31,7 +31,7 @@ function updatePost(req, res, next) {
 
   if (result.error) return next({ status: 400, error: result.error })
 
-  res.status(202).json({ result })
+  res.status(202).json(result)
 }
 
 function deletePost(req, res, next) {
