@@ -4,10 +4,12 @@ const path = require('path')
 
 function getIndex() {
   const db = readDB()
-  // We are going to return only the blog ids and titles to the client.
+  // We are going to return abbreviated content text to the client for the index.
   const index = db.map(post => {
-     return { id: post.id, title: post.title } 
-    })
+    // Get first 10 words of post and add ellipsis to the end.
+    let shortContent = post.content.split(' ', 10).join(' ') + '...'
+    return { id: post.id, title: post.title, date: post.date, content: shortContent } 
+  })
   return index
 }
 
