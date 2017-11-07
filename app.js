@@ -4,11 +4,13 @@ const port = process.env.PORT || 3000
 app.disable('x-powered-by')
 
 const cors = require('cors')
-// var corsOptions = {
-//   origin: 'https://kevinuscu-my-ajax-blog-client.surge.sh',
-//   // origin: 'http://127.0.0.1:8080/',
-//   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
-// }
+var corsOptions = {
+  // Following origin is for frontend deployed on surge
+  origin: 'https://kevinuscu-my-ajax-blog-client.surge.sh',
+  // Following origin is for frontend running on local machine
+  // origin: 'http://127.0.0.1:8080/',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
+}
 app.use(cors())
 
 const bodyParser = require('body-parser')
