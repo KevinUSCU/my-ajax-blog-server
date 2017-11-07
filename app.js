@@ -5,7 +5,8 @@ app.disable('x-powered-by')
 
 const cors = require('cors')
 var corsOptions = {
-  origin: 'http://127.0.0.1:8080/',
+  origin: 'https://kevinuscu-my-ajax-blog-client.surge.sh:80/',
+  // origin: 'http://127.0.0.1:8080/',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
 }
 app.use(cors())
